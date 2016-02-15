@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   
+    var one = 1
+    var two = 2
 
 
 }
