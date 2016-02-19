@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     var numberMultiplied = 0
     var numberOne = 0
     var resultNumber = 0
+    var maxNumber = 100
     
     
     //functions
@@ -53,6 +54,23 @@ class ViewController: UIViewController {
         resultLbl.text = "\(numberOne) + \(numberMultiplied) = \(resultNumber)"
         
         numberOne = resultNumber
+        
+        if resultNumber >= maxNumber {
+            
+            logo.hidden = false
+            inputField.hidden = false
+            playBtn.hidden = false
+            
+            resultLbl.hidden = true
+            addBtn.hidden = true
+            
+            numberMultiplied = 0
+            numberOne = 0
+            resultNumber = 0
+            
+            resultLbl.text = "Press Add to add!"
+            
+        }
         
     }
 
