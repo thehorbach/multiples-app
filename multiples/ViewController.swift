@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var one = 1
-    var two = 2
+    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var playBtn: UIButton!
+    
+    @IBOutlet weak var resultLbl: UILabel!
+    @IBOutlet weak var addBtn: UIButton!
+    
+ 
+    @IBAction func startPlay(sender: AnyObject) {
+    }
 
+    @IBAction func addNumber(sender: AnyObject) {
+    }
 
 }
 
